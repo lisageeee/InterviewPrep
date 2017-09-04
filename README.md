@@ -20,6 +20,9 @@
 - `String str = new String(ch);`
 #### Getting rid of spaces:
 - `string.replace(“ “, “”);`
+#### Getting the numeric value of a character:
+- `int x = Character.getNumericValue(char);`
+- ex; 'a' = 1
 #### Things to thing about
 - Letter case
 - White spaces
@@ -33,4 +36,44 @@
 ## [ArrayLists](https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html)
 #### Finding the index of an element:
 - `array.indexOf(element);`
+
+## Bit Manipulation
+#### Shifting:
+- 0001<< 1 = 0010
+- 1 << 1 = 2
+- 1100 >> 2 = 0011
+- The right shift operator is signed.
+- Right shift divide a number by 2. Rounds down.
+- A negative number’s most significant bit is 1. A signed right shift operator will shift the value of the sign.
+- Use >>> for unsigned shift ~ forces a 0
+- Left shift multiplies a number by 2.
+#### Bitwise Operators:
+- 1010 & 0101 == 0000
+- 1010 | 0101 == 1111
+- ~1010 == 0101
+- 1100 ^ 0110 == 1010
+#### Creating an integer from a binary string:
+- `Integer.toBinaryString(number);`
+#### Getting the position of the highest ordered bit:
+- `highestOneBit(int i)` - 1.
+#### ParseInt:
+- `Integer.parseInt(“1011”, 2)` ~ creates an integer with binary value of 1011. 
+#### Number of bits:
+- An integer has 32 bits.
+#### Determining whether an integer is a power of 2:
+- Since power of 2 means only one bit of n is 1, we can just check whether `n&(n-1) == 0`
+#### Setting a bit number:
+- `100010 |= (1<<2) === 100110`
+#### Turning off a bit number:
+- `100110 &= ~(1<<2) === 100010`
+#### Check whether xth bit is 1:
+- `result = 101010 & (1 << 3)` If this is `!= 0` then the xth bit is 1.
+#### Flip the xth bit:
+- `101000 ^= (1 << 2) === 101100`
+#### To get value of least significant bit that is 1:
+- ` X & ~X`
+#### Turn on all bits in a set of size n:
+- `(1 << n) - 1`
+
+
 

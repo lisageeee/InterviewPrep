@@ -36,6 +36,8 @@
 ## [ArrayLists](https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html)
 #### Finding the index of an element:
 - `array.indexOf(element);`
+#### Finding the minimum value in a list:
+- `int min=Collections.min(list);`
 
 ## Bit Manipulation
 #### Shifting:
@@ -76,5 +78,27 @@
 - ` X & ~X`
 #### Turn on all bits in a set of size n:
 - `(1 << n) - 1`
+
+## [Stacks](https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html)
+#### Initializing a stack in Java:
+- `Stack<Type> st = new Stack<Type>();`
+#### Stack operators:
+- `isEmpty()` ~ boolean value of whether the stack is empty
+- `push(item)`
+- `pop()` ~ returns and removes last item from stack
+- `peek()` ~ returns last item from stack
+- All take O(1)
+#### Representing a stack with an array
+- `n` stores the number of items in the stack
+- An array `items[]` stores the `n` items with the most recently inserted item in `items[n-1]` and the least recently inserted item in `items[0]`
+- Pros: Easy to implement. Memory saved because pointers not involved
+- Cons: not dynamic
+#### Representing a stack with a linked list
+- Maintain an instance variable that stores a reference to the most recently inserted item
+- Pros: Dynamic
+- Cons: Extra memory due to pointers
+#### If the stack is full
+- Create a new array of double the length of the old array and copy the items from the old array to the new array
+#### Can implement a queue using two stacks
 
 

@@ -47,6 +47,8 @@
 - A negative number’s most significant bit is 1. A signed right shift operator will shift the value of the sign.
 - Use >>> for unsigned shift ~ forces a 0
 - Left shift multiplies a number by 2.
+#### Creating a bit mask:
+- If we want to create 00000100 we can do `int bm = 1 << 2;`
 #### Bitwise Operators:
 - 1010 & 0101 == 0000
 - 1010 | 0101 == 1111
@@ -74,6 +76,5 @@
 - ` X & ~X`
 #### Turn on all bits in a set of size n:
 - `(1 << n) - 1`
-
 
 

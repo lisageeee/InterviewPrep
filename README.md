@@ -124,6 +124,20 @@ public ListNode reverseList(ListNode head) {
 `n.next = new ListNode(3, null);`
 `7->3`
 
+## Queues
+
+## Trees
+
+## Graphs
+
+## Search Algorithms
+
+## Sorting Algorithms
+
+## Dynamic Programming
+
+## Java details
+
 
 
 

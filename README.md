@@ -23,7 +23,7 @@
 #### Getting the numeric value of a character:
 - `int x = Character.getNumericValue(char);`
 - ex; 'a' = 1
-#### Things to thing about
+#### Things to think about
 - Letter case
 - White spaces
 - ASCII or Unicode. Unicode uses ASCII for the first 128 characters
@@ -100,5 +100,30 @@
 #### If the stack is full
 - Create a new array of double the length of the old array and copy the items from the old array to the new array
 #### Can implement a queue using two stacks
+
+## [Linked Lists](https://docs.oracle.com/javase/7/docs/api/java/util/LinkedList.html)
+#### Time complexity
+- Access & Search: O(n) ~ have to iterate through all of the elements
+- Insertion & Deleteion: O(1) ~ dyanamic data structures, just moving around pointers
+#### Reversing a linked list
+```java
+public ListNode reverseList(ListNode head) {
+        if(head == null) { return head; }
+        ListNode prev = null;
+        while(head != null) {
+            ListNode next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
+        }
+        return prev;
+    }
+ ```
+ #### Building a new node
+`ListNode n = new ListNode(7, null);`
+`n.next = new ListNode(3, null);`
+`7->3`
+
+
 
 

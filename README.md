@@ -133,10 +133,29 @@ public ListNode reverseList(ListNode head) {
 ## Search Algorithms
 
 ## Sorting Algorithms
+### QuickSort
+#### Sorts an array by repeatedly partitioning it
+- Can be done in place ~ good space complexity
+- `Arrays.sort(arr)` uses QuickSort
+#### Worst case scenario
+- Array is almost sorted. O(n^2). n comparisons first step, n-1, n-2, ...
+- In this case we could randomize position of elements
+#### Best case/Average case
+- O(nlogn) ~ n comparisons divided in half
+- Average case is also the best case because unless there is some reason for the array to be nearly sorted it is unlikely that it will be.
+### MergeSort
+- Divides array in two halves, sorts the halves, and merges them
+#### Merge step
+- Worst case n-1 comparisons are made
+- Best case n/2 comparisons are made
+#### Time complexity
+- O(nlogn)
 
 ## Dynamic Programming
 
 ## Java details
+
+## How to interview
 
 
 

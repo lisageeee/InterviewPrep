@@ -39,6 +39,16 @@
 #### Finding the minimum value in a list:
 - `int min=Collections.min(list);`
 
+## 2D Arrays
+#### Iterating through a 2D array
+````java
+for(int i = 0; i < arr.length; i++) { // Rows
+  for(int k = 0; k < arr[i].length; k++) { // Columns
+    System.out.println(arr[i][k]);
+  }
+}
+```
+
 ## Bit Manipulation
 #### Shifting:
 - 0001<< 1 = 0010

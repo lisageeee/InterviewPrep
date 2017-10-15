@@ -41,7 +41,7 @@
 
 ## 2D Arrays
 #### Iterating through a 2D array
-````java
+```
 for(int i = 0; i < arr.length; i++) { // Rows
   for(int k = 0; k < arr[i].length; k++) { // Columns
     System.out.println(arr[i][k]);
@@ -129,6 +129,7 @@ public ListNode reverseList(ListNode head) {
         return prev;
     }
  ```
+ 
  #### Building a new node
 `ListNode n = new ListNode(7, null);`
 `n.next = new ListNode(3, null);`

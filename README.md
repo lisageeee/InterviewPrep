@@ -138,6 +138,14 @@ public ListNode reverseList(ListNode head) {
 ## Queues
 
 ## Trees
+#### BFS Steps
+- Use a queue ~ can implement it using a linked list
+- If root is not null add root to the queue
+- While queue is not empty
+- Get first node in queue `poll()`
+- ~do something~
+- If value.left != null add it to the queue `offer()`
+- If value.right != null add it to the queue `offer()`
 
 ## Graphs
 

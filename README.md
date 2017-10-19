@@ -172,7 +172,25 @@ public ListNode reverseList(ListNode head) {
 
 ## Dynamic Programming
 
-## Java details
+## Java details (got the list from [this guy's](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions) blog)
+- class vs. object ~ class: specifies what exists in an object. An object is an instance of a class 
+- instantiation ~ creating an object
+- class/static method ~ a method should be static if it wouldn't make sense to call if before an object is constructed.
+- superclass or base class
+- subclass or derived class
+- inheritance
+- encapsulation
+- multiple inheritance 
+- delegation/forwarding
+- composition/aggregation
+- abstract class
+- interface/protocol 
+- method overriding
+- method overloading 
+- polymorphism 
+- is-a versus has-a relationships 
+- method signatures 
+- method visibility 
 
 ## How to interview
 

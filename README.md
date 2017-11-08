@@ -134,9 +134,9 @@ public ListNode reverseList(ListNode head) {
 `n.next = new ListNode(3, null);`
 `7->3`
 #### Cycle detection
--Can mark each node as visited? What if can’t modify list structure?
--Can put each node seen in a list? Could lead to memory problems
--Can have two pointers & increment them at different speeds. If the fast pointer passes the slow pointer then there is a cycle
+- Can mark each node as visited? What if can’t modify list structure?
+- Can put each node seen in a list? Could lead to memory problems
+- Can have two pointers & increment them at different speeds. If the fast pointer passes the slow pointer then there is a cycle
 
 ## Queues
 
@@ -150,13 +150,13 @@ public ListNode reverseList(ListNode head) {
 - If value.left != null add it to the queue `offer()`
 - If value.right != null add it to the queue `offer()`
 ### BSTs
--Often testing recursion when asked this type of question
--Lookup is O(logn) since you only have to look in half the tree
+- Often testing recursion when asked this type of question
+- Lookup is O(logn) since you only have to look in half the tree
 ### Heaps
 - A tree
--Min-heap: each child is >= parent node. Root node always smallest value
--Max-heap: each child is <= parent node. Root node always largest value
--Good for prioritizing ~ O(1) lookup for maximum value (highest priority) in max-heap
+- Min-heap: each child is >= parent node. Root node always smallest value
+- Max-heap: each child is <= parent node. Root node always largest value
+- Good for prioritizing ~ O(1) lookup for maximum value (highest priority) in max-heap
 
 ## Graphs
 

@@ -149,6 +149,13 @@ public ListNode reverseList(ListNode head) {
 - ~do something~
 - If value.left != null add it to the queue `offer()`
 - If value.right != null add it to the queue `offer()`
+#### Traversal
+- Pre-order: Node, left, right
+- In-order: Left, node, right
+- Post-order: left, right, node
+- Implement these with recursion!!!!!
+#### The height of a tree 
+- = height of tallest sub-tree + 1
 ### BSTs
 - Often testing recursion when asked this type of question
 - Lookup is O(logn) since you only have to look in half the tree
@@ -157,6 +164,9 @@ public ListNode reverseList(ListNode head) {
 - Min-heap: each child is >= parent node. Root node always smallest value
 - Max-heap: each child is <= parent node. Root node always largest value
 - Good for prioritizing ~ O(1) lookup for maximum value (highest priority) in max-heap
+### Balanced Trees
+- Red & Black trees
+- Can rotate trees to make them balanced.
 
 ## Graphs
 
